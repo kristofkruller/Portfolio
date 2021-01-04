@@ -1,4 +1,4 @@
-_TEST/
+_TEST/*
 *.orig
 node_modules/
 .DS_Store
