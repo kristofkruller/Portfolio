@@ -1,53 +1,50 @@
   
-  /*reset*/
+ /*reset*/
   html {box-sizing: border-box;}
     * {margin : 0; padding : 0;}
     *, *:before, *:after {box-sizing : inherit;}
-  /*reset*/
-
+ /*reset*/
+:root {
+  --main-font-color : whitesmoke;
+  --main-background-color : black;
+}
+ /* navbar */
   body {
     font-family:'Barlow Condensed', sans-serif;
+    text-rendering: optimizeLegibility;
   }
   
   nav {
     height: 10vh;
-    background: black;
+    background: var(--main-background-color);     
   }
   
   .nav-links {
     display: flex;
+    flex-direction: row;
+    padding-top: 20px;
     list-style: none;
     width: 50%;
-    height: 100%;
     justify-content: space-around;
-    align-items: center;
     margin-left: auto;
+    letter-spacing: 3px;
+    font-weight: 450;
+    font-size: 18px;
   }
   
   .nav-links li a {
-    color: whitesmoke;
+    color: var(--main-font-color);
     text-decoration: none;
     font-size: 16px;
   }
   
-  .landing {
-    height: 90vh;
-    display: flex;
-    justify-content: left;
-    align-items: left;
-  }
-  
-  .landing h1 {
-    margin: 100px;
-    font-size: 50px;
-    color: whitesmoke;
-  }
+
   
   @media screen and (max-width: 768px) {
     .line {
       width: 30px;
       height: 3px;
-      background: whitesmoke;
+      background: var(--main-font-color);
       margin: 5px;
     }
     nav {
@@ -60,12 +57,12 @@
       right: 5%;
       top: 50%;
       transform: translate(-5%, -50%);
-      z-index: 2;
+      z-index: 30;
     }
   
     .nav-links {
-      position: fixed;
-      background: black;
+      position: center;
+      background: var(--main-background-color);
       height: 100vh;
       width: 100%;
       flex-direction: column;
@@ -73,6 +70,7 @@
       -webkit-clip-path: circle(100px at 90% -10%);
       transition: all 1s ease-out;
       pointer-events: none;
+      letter-spacing: 5px;
     }
     .nav-links.open {
       clip-path: circle(1000px at 90% -10%);
@@ -83,6 +81,7 @@
       flex-direction: column;
     }
     .nav-links li {
+      margin-left: 40%;
       opacity: 0;
     }
     .nav-links li a {
@@ -101,4 +100,27 @@
       opacity: 1;
     }
   }
-  
+/*navbar*/
+.background {
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;   
+  background: var(--main-background-color);
+}
+.background img {
+  height: 100%; 
+  width: 100%;
+  object-fit: cover;
+}
+
+#myname {
+  position: absolute;
+  color: var(--main-font-color);
+  font-size: 35px;
+  font-weight: 200;
+  letter-spacing: 3px;
+  left: 5%;
+  bottom: 10%;
+  transform: translate(-20%, -70%);
+}
