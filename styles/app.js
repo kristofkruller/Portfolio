@@ -10,4 +10,3 @@ hamburger.addEventListener("click", () => {
   });
 });
 /*Navbar circle effect*/
-
