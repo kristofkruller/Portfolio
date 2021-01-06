@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500&display=swap" rel="stylesheet" />    
     <title>Portfolio</title>
   </head>
+<!--Landing page section-->
   <body>
   <header>
     <nav>
@@ -29,27 +30,32 @@
       <img src="./images/background1.jpg" alt="background">
       </div>
   <h1 class="myname">Kristof Kruller <span>Welcome on my Portfolio page</span></h1>
-  <!--<section>
-    <div class="Contact">
+<!--Landing page section-->
+
+<!--Contact section-->
+  <section class="contact-section">
+    <div class="contact-links">
       <ul>
-        <li>Github</li>
-        <li>LinkedIn</li>
+        <li class="Me"><h2>Contact Me</h2></li>
+        <li a href="#" class="Git">Github</li>
+        <li a href="#" class="Li">LinkedIn</li>
       </ul>
     </div>
     <div class="email-box">
-      <form action="">
-        <div class="email-text">
-          <label for="message">Please share with me your thoughts below</label>
-          <input type="text">
-        </div>
-        <input type="button" value="Send" id="email-button"> 
+      <h2>Please share your thoughts with me below</h2>
+        <form class="email-contact" action="" method="POST">
+          <input type="text" name="name" class="text-box" placeholder="Your Name" required>
+          <input type="email" name="email" class="text-box" placeholder="Your Email" required>
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <input type="submit" name="submit" id="email-button" value="Send"> 
       </form>
     </div>
   </section>
+<!--Contact section-->
   <footer></footer>
--->
-  <!--Javascript-->
+
+<!--Javascript-->
     <script src="./styles/app.js"></script>
-  <!--Javascript-->
+<!--Javascript-->
   </body>
 </html>

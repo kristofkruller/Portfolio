@@ -27,19 +27,42 @@
     width: 50%;
     justify-content: space-around;
     margin-left: auto;
-    letter-spacing: 3px;
-    font-weight: 450;
-    font-size: 18px;
   }
-  
   .nav-links li a {
+    font-size: 18px;
+    letter-spacing: 3px;
     color: var(--main-font-color);
     text-decoration: none;
-    font-size: 16px;
+  }
+  .background {
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;   
+    background: var(--main-background-color);
+  }
+  .background img {
+    height: 100%; 
+    width: 100%;
+    object-fit: cover;
   }
   
-
-  
+  .myname {
+    position: absolute;
+    color: var(--main-font-color);
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 2.7px;
+    left: 10%;
+    top: 28%;
+    transform: translate(-20%, -70%);
+  }
+  h1 span {
+    text-transform: uppercase;
+    font-size: 27px;
+    display: block;
+  }
+   
   @media screen and (max-width: 768px) {
     .line {
       width: 30px;
@@ -61,32 +84,40 @@
     }
   
     .nav-links {
-      position: center;
+      position: relative;
       background: var(--main-background-color);
       height: 100vh;
       width: 100%;
+      display: flex;
       flex-direction: column;
       clip-path: circle(100px at 90% -10%);
       -webkit-clip-path: circle(100px at 90% -10%);
       transition: all 1s ease-out;
       pointer-events: none;
+    }
+    .nav-links li a {
       letter-spacing: 5px;
+      font-size: 20px;
+      font-weight: 300;
     }
     .nav-links.open {
-      clip-path: circle(1000px at 90% -10%);
-      -webkit-clip-path: circle(1000px at 90% -10%);
+      clip-path: circle(670px at 90% -10%);
+      -webkit-clip-path: circle(670px at 90% -10%);
       pointer-events: all;
+      justify-content: space-evenly;
+      padding: 0rem 3rem 15rem 0rem;
     }
+   
     .landing {
       flex-direction: column;
     }
     .nav-links li {
-      margin-left: 40%;
+      margin-left: 75%;
       opacity: 0;
+      color: whitesmoke;
+      z-index: 30;
     }
-    .nav-links li a {
-      font-size: 25px;
-    }
+
     .nav-links li:nth-child(1) {
       transition: all 0.5s ease 0.2s;
     }
@@ -100,44 +131,126 @@
       opacity: 1;
     }
     .myname {
-      margin-left: 65%;
-      opacity: 0.3; }
+      margin-left: 0rem;
+      padding: 11rem 2rem 0rem 0rem;
+      opacity: 0.47;
+      display: flex;
+      flex-direction: column;
+      max-width: 100px;
+    }
   }
-
-.background {
-  display: flex;
-  height: 90vh;
-  justify-content: center;
-  align-items: center;   
-  background: var(--main-background-color);
-}
-.background img {
-  height: 100%; 
-  width: 100%;
-  object-fit: cover;
-}
-
-.myname {
-  position: absolute;
-  color: var(--main-font-color);
-  font-size: 35px;
-  font-weight: 300;
-  letter-spacing: 3px;
-  left: 10%;
-  top: 28%;
-  transform: translate(-20%, -70%);
-}
-h1 span {
-  text-transform: uppercase;
-  font-size: 20px;
-  display: block;
-}
 
 /*Landing form */
 
 /* Contact form */
-/*
+.contact-section {
+  min-height: 100vh;
+  color: whitesmoke;
+  background: black;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+.contact-links .email-box {
+  flex: 1;
+}
+.contact-links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  line-height: 65px;
+  padding-left: 50px;
+  font-size: 20px;
+}
+.contact-links li {
+  letter-spacing: 5px;
+  list-style: none;
+  margin-right: 20px;
+  font-size: 25px;
+}
 .email-box {
-  height: 60vh;
-  background-color: black;
+  max-width: 700px;
+  margin-right: 50px; 
+}
+.email-box h2 {
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color: rgba(54, 184, 207, 0.83);
+
+}
+.Me {
+  text-transform: uppercase;
+}
+.email-box .email-contact .text-box {
+  background: rgba(9, 123, 143, 0.555);
+  color: whitesmoke;
+  border: none;
+  width: calc(50% - 10px);
+  height: 50px;
+  padding: 12px;
+  font-size: 25px;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(255, 253, 253, 0.1);
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+[name="name"] {
+  margin-right: 15px;
+}
+.email-contact textarea {
+  background: rgba(9, 123, 143, 0.5);
+  color: whitesmoke;
+  border: none;
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  min-height: 200px;
+  max-height: 400px;
+  resize: vertical;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(255, 253, 253, 0.1);
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+#email-button {
+  float: right;
+  background: rgba(9, 123, 143, 0.5);
+  color: whitesmoke;
+  border: none;
+  width: 120px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 450;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  transition-property: background; 
+}
+#email-button:hover {
+  background: rgba(54, 184, 207, 0.83);
+}
+
+@media screen and (max-width: 768px) {
+  .contact-section {
+    flex-direction: column;
+  }
+  .contact-links .email-box {
+    margin: 30px 50px;
+  }
+  .Me {
+    font-size: 30px;
+  }
+  .email-box .email-contact {
+    width: 100%;
+    margin-left: 10%;
+
+  }
 }
