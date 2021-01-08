@@ -1,17 +1,31 @@
   
- /*reset*/
+/* Reset START*/
   html {box-sizing: border-box;}
     * {margin : 0; padding : 0;}
     *, *:before, *:after {box-sizing : inherit;}
- /*reset*/
+/* Reset END*/
 :root {
   --main-font-color : whitesmoke;
   --main-background-color : black;
 }
- /* Landing form */
+/* Scroll bar START*/
+::-webkit-scrollbar {
+  width: 10px;
+  background: black;
+}
+::-webkit-scrollbar-track {
+  border: none;
+}
+::-webkit-scrollbar-thumb {
+  background: radial-gradient(rgba(96, 174, 238, 0.35), black);
+}
+/* Scroll bar END*/
+
+/* Landing form START */
   body {
     font-family:'Barlow Condensed', sans-serif;
     text-rendering: optimizeLegibility;
+    min-height: 100vh;
   }
   
   nav {
@@ -34,6 +48,12 @@
     color: var(--main-font-color);
     text-decoration: none;
   }
+  .nav-links li:hover {
+    transform: scale(1.2);
+    font-weight: 450;
+    transition: .1s;
+  }
+  
   .background {
     display: flex;
     height: 90vh;
@@ -101,8 +121,8 @@
       font-weight: 300;
     }
     .nav-links.open {
-      clip-path: circle(670px at 90% -10%);
-      -webkit-clip-path: circle(670px at 90% -10%);
+      clip-path: circle(680px at 90% -10%);
+      -webkit-clip-path: circle(680px at 90% -10%);
       pointer-events: all;
       justify-content: space-evenly;
       padding: 0rem 3rem 15rem 0rem;
@@ -140,10 +160,10 @@
     }
   }
 
-/*Landing form */
+/* Landing form END*/
 
-/* Contact form */
-.contact-section {
+/* Contact form START*/
+#contact-section {
   min-height: 100vh;
   color: whitesmoke;
   background: black;
@@ -153,6 +173,7 @@
   align-items: center;
   padding-top: 20px;
 }
+
 .contact-links .email-box {
   flex: 1;
 }
@@ -163,15 +184,34 @@
   align-items: center;
   max-width: 500px;
   line-height: 65px;
-  padding-left: 50px;
-  font-size: 20px;
+  padding-left: 30px;
 }
 .contact-links li {
-  letter-spacing: 5px;
   list-style: none;
   margin-right: 20px;
-  font-size: 25px;
 }
+.Me {
+  text-transform: uppercase;
+  font-size: 35px;
+  letter-spacing: 5px;
+  margin-bottom: 10%;
+}
+
+.contact-links i {
+  background: black;
+  color: rgba(194, 233, 243, 0.822);
+  margin-left: 10px;
+  font-size: 40px;
+}
+.contact-links i:hover {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  cursor: pointer;
+  color: rgba(54, 184, 207, 0.83);
+  transform: scale(1.3) rotate(2deg);
+  transition: 0.4s;
+}
+
 .email-box {
   max-width: 700px;
   margin-right: 50px; 
@@ -182,11 +222,8 @@
   text-transform: uppercase;
   margin-bottom: 30px;
   color: rgba(54, 184, 207, 0.83);
+}
 
-}
-.Me {
-  text-transform: uppercase;
-}
 .email-box .email-contact .text-box {
   background: rgba(9, 123, 143, 0.555);
   color: whitesmoke;
@@ -200,9 +237,11 @@
   margin-bottom: 20px;
   opacity: 0.9;
 }
+
 [name="name"] {
   margin-right: 15px;
 }
+
 .email-contact textarea {
   background: rgba(9, 123, 143, 0.5);
   color: whitesmoke;
@@ -232,25 +271,79 @@
   border-radius: 10px;
   cursor: pointer;
   transition: 0.3s;
-  transition-property: background; 
 }
 #email-button:hover {
   background: rgba(54, 184, 207, 0.83);
 }
+.email-contact textarea:hover {
+  background: rgba(54, 184, 207, 0.65);
+  transition: 0.5s;
+}
+.email-contact .text-box:hover {
+  background: rgba(54, 184, 207, 0.65);
+  transition: 0.5s;
+}
+.pagetop i {
+  position: absolute;
+  left: 5%;
+  bottom: -95%;
+  font-size: 40px;
+  cursor: pointer;
+  color: whitesmoke;
+  background: black;
+}
+.pagetop i:hover {
+  transform: scale(1.5) rotate(180deg);
+  transition: .3s;
+  color: red;
+}
 
 @media screen and (max-width: 768px) {
-  .contact-section {
+  #contact-section {
     flex-direction: column;
-  }
-  .contact-links .email-box {
-    margin: 30px 50px;
   }
   .Me {
     font-size: 30px;
   }
   .email-box .email-contact {
     width: 100%;
-    margin-left: 10%;
-
+    margin: 10px;
+    padding-left: 30px;
+  }
+  .email-box h2 {
+    margin-left: 40px;
+  }
+  .contact-links i:hover {
+    margin-top: 5%;
+    margin-bottom: 7%;
+    color: rgba(54, 184, 207, 0.83);
+    transform: scale(1.1) rotate(-2deg);
+    transition: 0.4s;
+  }
+  .pagetop i {
+    font-size: 27px;
+    transform: rotate(180deg);
+  }
+  .pagetop i:hover {
+    transform: scale(1.3) rotate(180deg);
+    color: cadetblue;
+    transition: .3s;
   }
 }
+/* Contact form END*/
+/* Footer START
+footer {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: black;
+}
+.footer-links li a {
+  list-style: none;
+  text-decoration: none;
+  color: whitesmoke;
+}
+*/
+
+

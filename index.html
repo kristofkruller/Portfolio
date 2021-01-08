@@ -7,55 +7,65 @@
     <link rel="stylesheet" href="./styles/styles.css" />
     <link rel="stylesheet" href="./styles/normalize.css" class="normalize" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500&display=swap" rel="stylesheet" />    
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">    
     <title>Portfolio</title>
   </head>
-<!--Landing page section-->
+<!--Landing page section START-->
   <body>
-  <header>
-    <nav>
+    <header id=header>
+      <nav>
         <div class="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">Projects</a></li>
-      </ul>
-    </nav>
-  </header>
-      <div class="background">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#">About</a></li>
+          <li><a href="#contact-section">Contact</a></li>
+          <li><a href="#">Projects</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="background">
       <img src="./images/background1.jpg" alt="background">
+    </div>
+    <h1 class="myname">Kristof Kruller <span>Welcome on my Portfolio page</span></h1>
+<!--Landing page section END-->
+<!--Contact section START-->
+    <section id="contact-section">
+      <div class="contact-links">
+        <ul>
+          <li class="Me"><h2>Contact Me</h2></li>
+          <li><a href="https://github.com/kristofkruller" target="_blank"><i class="fab fa-github-square">Github</i></a></li>
+          <li><a href="https://www.linkedin.com/in/kristof-kruller" target="_blank"><i class="fab fa-linkedin">LinkedIn</i></a></li>
+        </ul>
       </div>
-  <h1 class="myname">Kristof Kruller <span>Welcome on my Portfolio page</span></h1>
-<!--Landing page section-->
-
-<!--Contact section-->
-  <section class="contact-section">
-    <div class="contact-links">
-      <ul>
-        <li class="Me"><h2>Contact Me</h2></li>
-        <li a href="#" class="Git">Github</li>
-        <li a href="#" class="Li">LinkedIn</li>
-      </ul>
-    </div>
-    <div class="email-box">
-      <h2>Please share your thoughts with me below</h2>
-        <form class="email-contact" action="" method="POST">
-          <input type="text" name="name" class="text-box" placeholder="Your Name" required>
-          <input type="email" name="email" class="text-box" placeholder="Your Email" required>
-          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-          <input type="submit" name="submit" id="email-button" value="Send"> 
-      </form>
-    </div>
-  </section>
-<!--Contact section-->
-  <footer></footer>
-
-<!--Javascript-->
+      <div class="email-box">
+          <h2>Please share your thoughts with me below</h2>
+          <form class="email-contact" action="" method="POST">
+            <input type="text" name="name" class="text-box" placeholder="Your Name" required>
+            <input type="email" name="email" class="text-box" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <input type="submit" name="submit" id="email-button" value="Send"> 
+          </form>
+      </div>
+      <div class="pagetop"><a href="#header"><i class="fas fa-fast-forward"></i></a></div>
+    </section>
+<!--Contact section END-->
+<!--Javascript START-->
     <script src="./styles/app.js"></script>
-<!--Javascript-->
+<!--Javascript END-->
+   <!-- <footer>
+      <div class="footer-links">
+        <ul>
+          <li><a href="#header">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#contact-section">Contact</a></li>
+          <li><a href="#">Projects</a></li>
+        </ul>
+      </div>
+      <p>Copiright &copy;<script>document.write(new Date().getFullYear());</script>,KristofKruller</p>
+    </footer>-->
   </body>
 </html>
