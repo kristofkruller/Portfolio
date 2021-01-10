@@ -10,7 +10,7 @@ hamburger.addEventListener("click", () => {
   });
 });
 /*Navbar circle effect*/
-/*Email function*/
+/*Email function
 document.querySelector("textarea").addEventListener("submit".submitForm);
 
 function sendEmail(name, email, message) {
@@ -25,3 +25,20 @@ function sendEmail(name, email, message) {
   }).then(function (message) { alert("Mail sent successfully") 
 });
 }
+*/
+/*version2
+function sendEmail() { 
+  Email.send({ 
+    Host: "smtp.gmail.com", 
+    Username: "design.kruller@gmail.com",
+    Password: "pqekqcthxbckwwsa",
+    To: "design.kruller@gmail.com",
+    From: "design.kruller@gmail.com",
+    Subject: "Recived a review",
+    Body: `Email: ${email} <br/> Message: ${message}`,
+  }) 
+    .then(function (message) { 
+      alert("mail sent successfully") 
+    }); 
+} 
+*/
