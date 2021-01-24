@@ -1,4 +1,4 @@
-/*Navbar circle effect*/
+//Navbar circle effect
 const hamburger = document.querySelector(".hamburger");
 const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".nav-links li");
@@ -9,7 +9,8 @@ hamburger.addEventListener("click", () => {
     link.classList.toggle("fade");
   });
 });
-/*Navbar circle effect*/
+//Navbar circle effect END
+
 /*Email function
 document.querySelector("textarea").addEventListener("submit".submitForm);
 
