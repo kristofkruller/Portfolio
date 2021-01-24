@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Barlow Condensed', sans-serif;
+  text-rendering: optimizeLegibility;
+}
+.home-button {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.home-button a {
+  text-decoration: none;
+  color: black;
+}
+#hero {
+  min-height: 100vh;
+  background: linear-gradient(to right top, rgb(87, 195, 238), rgb(37, 224, 193));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.glass {
+  background: white;
+  min-height: 80vh;
+  width: 60%;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  border-radius: 2rem;
+  z-index: 10;
+  backdrop-filter: blur(2rem);
+  display: flex;
+}
+.circle1, .circle2, .circle3 {
+  background: white;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5));
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  border-radius: 50%;
+}
+.circle1 {
+  top: 5%;
+  right: 15%;
+  z-index: 2;
+}
+.circle2 {
+  bottom: 5%;
+  left: 10%;
+  z-index: 2;
+}
+.circle3 {
+  bottom: -70%;
+  right: 11%;
+}
+
+.dashboard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  border-radius: 2rem;
+}
+
+.user h3 {
+  padding: 0.5rem;
+}
+.user p {
+  color: black;
+  padding: 1.5rem;
+}
+.user img {
+  max-height: 80%;
+  max-width: 80%;
+  clip-path: circle();
+}
+.link {
+  display: flex;
+  margin: 2rem 0rem;
+  padding: 1rem 5rem;
+  align-items: center;
+}
+.link h2 {
+  padding: 0rem 2rem;
+}
+
+/*skills*/
+.skills {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.card {
+  width: 80%;
+  border-radius: 30px;
+  padding: 0rem 5rem;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin: 1rem 0;
+}
+.card img {
+  max-height: 60%;
+  max-width: 60%;
+}
+.content p, .content h3 {
+  font-size: 1.2rem;
+  padding: 1rem 0rem;
+  color: #585858;
+  font-weight: 600;
+}
