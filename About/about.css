@@ -5,21 +5,12 @@
   font-family:'Barlow Condensed', sans-serif;
   text-rendering: optimizeLegibility;
 }
+/*BACKGROUND AND PARENT CONTAINER*/
 
-.home-button {
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  font-size: 1.4rem;
-  cursor: pointer;
-}
-.home-button a {
-  text-decoration: none;
-  color: black;
-}
 #hero {
   min-height: 100vh;
-  background: linear-gradient(to right top, rgb(87, 195, 238), rgb(37, 224, 193));
+  min-width: 966px;
+  background: linear-gradient(to right top, rgb(238, 160, 87), rgb(39, 47, 82));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -29,6 +20,7 @@
   background: white;
   min-height: 80vh;
   width: 60%;
+  min-width: 966px;
   background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
   border-radius: 2rem;
   z-index: 10;
@@ -57,16 +49,32 @@
   bottom: -70%;
   right: 11%;
 }
+/*DASHBOARD TAB*/
 
 .dashboard {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   text-align: center;
   background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
   border-radius: 2rem;
+  padding: 3rem;
+}
+
+.home-button {
+  top: 3rem;
+  left: 0.5rem;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+  padding: 3rem;
+}
+.home-button a {
+  text-decoration: none;
+  color: black;
 }
 
 .user h3 {
@@ -91,7 +99,7 @@
   padding: 0rem 2rem;
 }
 
-/*skills*/
+/*SKILLS TAB*/
 .skills {
   flex: 2;
   display: flex;
@@ -108,6 +116,7 @@
   text-align: center;
   margin: 1rem 0;
   transform-style: preserve-3d;
+  
 }
 .card img {
   max-height: 60%;
@@ -120,4 +129,14 @@
   color: #585858;
   font-weight: 600;
   transition: all 0.75s ease-out;
+}
+/*RESPO ALL*/
+@media screen and (max-width: 768px) {
+  #hero, .glass, .skills, .dashboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 125%;
+  }
 }
