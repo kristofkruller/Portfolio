@@ -5,6 +5,7 @@
   font-family:'Barlow Condensed', sans-serif;
   text-rendering: optimizeLegibility;
 }
+
 .home-button {
   position: absolute;
   top: 5%;
@@ -97,6 +98,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  perspective: 1000px;
 }
 .card {
   width: 80%;
@@ -105,14 +107,17 @@
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
   text-align: center;
   margin: 1rem 0;
+  transform-style: preserve-3d;
 }
 .card img {
   max-height: 60%;
   max-width: 60%;
+  transition: all 0.75s ease-out;
 }
 .content p, .content h3 {
   font-size: 1.2rem;
   padding: 1rem 0rem;
   color: #585858;
   font-weight: 600;
+  transition: all 0.75s ease-out;
 }
