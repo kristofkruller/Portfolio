@@ -40,7 +40,6 @@ const cardH = document.querySelectorAll('.content h3');
 const cardP = document.querySelectorAll('.content p');
 
 skills.addEventListener('mouseenter', (e) => {
-  cardIcons[0].style.transform = 'rotate(190deg)';
   cardIcons.forEach(icon => {
     icon.style.transform = 'translateZ(35px)';
   });
@@ -53,7 +52,6 @@ skills.addEventListener('mouseenter', (e) => {
 });
 
 skills.addEventListener('mouseleave', (e) => {
-  cardIcons[0].style.transform = 'rotate(0deg)';
   cardIcons.forEach(icon => {
     icon.style.transform = 'translateZ(0px)';
   });
@@ -76,13 +74,13 @@ function cursor(e) {
   mouseCursor.style.left = e.pageX + 'px';
 }
 
-homeBtn.addEventListener('mouseleave', () => {
+homeBtn.addEventListener('mouseleave', (e) => {
   mouseCursor.classList.remove('link-grow');
-  link.classList.remove('hovered-link');
+  e.classList.remove('hovered-link');
 });
-homeBtn.addEventListener('mouseover', () => {
+homeBtn.addEventListener('mouseover', (e) => {
   mouseCursor.classList.add('link-grow');
-  link.classList.add('hovered-link');
+  e.classList.add('hovered-link');
 });
 
 navLinks.forEach(link => {

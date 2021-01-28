@@ -214,7 +214,6 @@
   body {
     zoom: 1;
   }
-  
   #hero, .glass, .skills, .dashboard {
     display: flex;
     flex-direction: column;
