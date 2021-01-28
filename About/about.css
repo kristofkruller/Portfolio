@@ -4,7 +4,32 @@
   box-sizing: border-box;
   font-family:'Barlow Condensed', sans-serif;
   text-rendering: optimizeLegibility;
+  cursor: none;
 }
+
+/*CURSOR AND LINK ANIM TOOLS*/
+
+.cursor {
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  transform-origin: 100% 100%;
+  z-index: 9;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  transition-property: background, transform;
+  backdrop-filter: blur(2px);
+}
+
+/*JS classes*/
+
+.link-grow {
+  transform: scale(2);
+}
+
 /*BACKGROUND AND PARENT CONTAINER*/
 
 #hero {
@@ -23,7 +48,7 @@
   min-width: 966px;
   background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
   border-radius: 2rem;
-  z-index: 10;
+  z-index: 8;
   backdrop-filter: blur(2rem);
   display: flex;
 }
@@ -48,7 +73,9 @@
 .circle3 {
   bottom: -70%;
   right: 11%;
+  z-index: 2;
 }
+
 /*DASHBOARD TAB*/
 
 .dashboard {
@@ -61,6 +88,7 @@
   background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
   border-radius: 2rem;
   padding: 3rem;
+  color: #585555;
 }
 
 .home-button {
@@ -79,14 +107,22 @@
 
 .user h3 {
   padding: 0.5rem;
+  font-size: 2.3rem;
+  letter-spacing: 0.1rem;
 }
 .user p {
-  color: black;
   padding: 1.5rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #413e3e;
+}
+.user p:hover {
+  color: #47220b;
+  transition: 0.5s;
 }
 .user img {
-  max-height: 80%;
-  max-width: 80%;
+  max-height: 90%;
+  max-width: 90%;
   clip-path: circle();
 }
 .link {
@@ -94,12 +130,30 @@
   margin: 2rem 0rem;
   padding: 1rem 5rem;
   align-items: center;
+  justify-content: center;
 }
-.link h2 {
-  padding: 0rem 2rem;
+.link i:hover {
+  color: rgb(39, 47, 82);
+  transition: 1.5s;
+}
+.link i {
+  color: black;
+  font-size: 5rem;
+  color: rgba(233, 144, 60, 0.712);
+}
+.link i h2 {
+  padding-top: 1.4rem;
+  font-size: 1.5rem;
+  color: #413e3e;
+}
+.link i h2:hover {
+  color: rgb(238, 160, 87);
+  transition: 1s;
 }
 
+
 /*SKILLS TAB*/
+
 .skills {
   flex: 2;
   display: flex;
@@ -116,7 +170,6 @@
   text-align: center;
   margin: 1rem 0;
   transform-style: preserve-3d;
-  
 }
 .card img {
   max-height: 60%;
@@ -124,13 +177,15 @@
   transition: all 0.75s ease-out;
 }
 .content p, .content h3 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   padding: 1rem 0rem;
-  color: #585858;
+  color: #2c2a2a;
   font-weight: 600;
   transition: all 0.75s ease-out;
 }
+
 /*RESPO ALL*/
+
 @media screen and (max-width: 768px) {
   #hero, .glass, .skills, .dashboard {
     display: flex;
