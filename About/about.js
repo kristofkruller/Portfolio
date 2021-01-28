@@ -1,3 +1,9 @@
+// Turn off on mobile also an option - becasue the animation doesnt look very well there, but not succeed so just used display none on skills tab in css. 
+/*if ($(window).width() < 768) {
+  $('body').remove('<script src="../About/about.js"></script>')
+}
+*/
+
 //SKILLS TAB ANIMATION START//
 //CARD ITSELF
 const skills = document.querySelector('.skills');
@@ -72,6 +78,7 @@ skills.addEventListener('mouseleave', (e) => {
 //SKILLS TAB ANIMATION END//
 //CURSOR AND LINKS ANIMATION START//
 let mouseCursor = document.querySelector('.cursor');
+let homeBtn = document.querySelector('.home-button a');
 let navLinks = document.querySelectorAll('.link a');
 
 window.addEventListener('mousemove', cursor);
@@ -79,6 +86,15 @@ function cursor(e) {
   mouseCursor.style.top = e.pageY + 'px';
   mouseCursor.style.left = e.pageX + 'px';
 }
+
+homeBtn.addEventListener('mouseleave', () => {
+  mouseCursor.classList.remove('link-grow');
+  link.classList.remove('hovered-link');
+});
+homeBtn.addEventListener('mouseover', () => {
+  mouseCursor.classList.add('link-grow');
+  link.classList.add('hovered-link');
+});
 
 navLinks.forEach(link => {
   link.addEventListener('mouseleave', () => {

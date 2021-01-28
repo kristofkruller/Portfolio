@@ -42,6 +42,7 @@
   padding: 1rem;
 }
 .glass {
+  position: relative;
   background: white;
   min-height: 80vh;
   width: 60%;
@@ -64,16 +65,30 @@
   top: 5%;
   right: 15%;
   z-index: 2;
+  background: linear-gradient(to right top, rgb(238, 160, 87), rgb(94, 116, 212));
 }
 .circle2 {
   bottom: 5%;
   left: 10%;
   z-index: 2;
+  background: linear-gradient(to left top, rgb(238, 160, 87), rgb(94, 116, 212));
 }
 .circle3 {
   bottom: -70%;
   right: 11%;
   z-index: 2;
+  background: linear-gradient(to left top, rgb(238, 235, 87), rgb(94, 116, 212));
+}
+.circle4 {
+  position: absolute;
+  top: 170%;
+  left: 30%;
+  z-index: 2;
+  background: white;
+  background: linear-gradient(to left top, rgb(50, 80, 252), rgba(218, 255, 7, 0.5));
+  height: 40rem;
+  width: 40rem;
+  border-radius: 50%;
 }
 
 /*DASHBOARD TAB*/
@@ -94,15 +109,23 @@
 .home-button {
   top: 3rem;
   left: 0.5rem;
+  letter-spacing: 0.2rem;
   font-size: 1.4rem;
   display: flex;
   align-items: flex-start;
-  cursor: pointer;
   padding: 3rem;
 }
 .home-button a {
   text-decoration: none;
   color: black;
+}
+.home-button a:hover {
+  color: rgb(46, 42, 102);
+  transition: 0.3s;
+}
+.home-button i:hover {
+  color: #a55e0dbd;
+  transition: 0.3s;
 }
 
 .user h3 {
@@ -117,6 +140,7 @@
   color: #413e3e;
 }
 .user p:hover {
+  font-weight: 510;
   color: #47220b;
   transition: 0.5s;
 }
@@ -187,11 +211,27 @@
 /*RESPO ALL*/
 
 @media screen and (max-width: 768px) {
+  body {
+    zoom: 1;
+  }
+  
   #hero, .glass, .skills, .dashboard {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 125%;
+  }
+  .circle1, .circle2, .circle3, .circle4 {
+    display: none;
+  }
+  .card {
+    display: none;
+  }
+  .user p {
+    padding: 5rem;
+  }
+  .home-button {
     font-size: 125%;
   }
 }
