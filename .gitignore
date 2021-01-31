@@ -1,5 +1,4 @@
-_TEST/
 *.orig
 node_modules/
 .DS_Store
-./React projects
+React projects/
