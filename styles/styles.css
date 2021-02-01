@@ -35,17 +35,18 @@
     min-height: 100vh;
   }
   nav {
-    height: 10vh;
-    background: var(--main-background-color);     
+    height: 7vh;
+    background: rgba(0, 0, 0);  
   }
   .nav-links {
     display: flex;
     flex-direction: row;
-    padding-top: 20px;
+    align-items: center;
+    justify-content: space-around;
     list-style: none;
     width: 50%;
-    justify-content: space-around;
     margin-left: auto;
+    padding-top: 1%;
   }
   .nav-links li a {
     font-size: 18px;
@@ -59,16 +60,19 @@
     transition: .1s;
   }
   .background {
+    position: relative;
     display: flex;
-    height: 90vh;
+    height: 93vh;
     justify-content: center;
     align-items: center;   
     background: var(--main-background-color);
   }
-  .background img {
+  .background video {
+    position: absolute;
     height: 100%; 
     width: 100%;
     object-fit: cover;
+    overflow: hidden;
   }
   .myname {
     position: absolute;
@@ -95,6 +99,7 @@
     }
     nav {
       position: relative;
+
     }
     .hamburger {
       position: absolute;
@@ -102,7 +107,7 @@
       right: 5%;
       top: 50%;
       transform: translate(-5%, -50%);
-      z-index: 30;
+      z-index: 10;
     }
     .nav-links {
       position: relative;
@@ -115,6 +120,8 @@
       -webkit-clip-path: circle(100px at 90% -10%);
       transition: all 1s ease-out;
       pointer-events: none;
+      z-index: 10;
+
     }
     .nav-links li a {
       letter-spacing: 5px;
@@ -135,7 +142,7 @@
       margin-left: 75%;
       opacity: 0;
       color: whitesmoke;
-      z-index: 30;
+      z-index: 8;
     }
     .nav-links li:nth-child(1) {
       transition: all 0.5s ease 0.2s;
@@ -156,6 +163,7 @@
       display: flex;
       flex-direction: column;
       max-width: 100px;
+      z-index: 10;
     }
   }
 
