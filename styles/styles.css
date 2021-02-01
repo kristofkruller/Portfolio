@@ -22,7 +22,7 @@
   border: none;
 }
 ::-webkit-scrollbar-thumb {
-  background: radial-gradient(rgba(96, 174, 238, 0.35), black);
+  background: radial-gradient(rgba(105, 96, 238, 0.35), black);
 }
 
 /* Scroll bar END*/
@@ -36,7 +36,8 @@
   }
   nav {
     height: 7vh;
-    background: rgba(0, 0, 0);  
+    background: rgba(0, 0, 0);
+    z-index: 10;
   }
   .nav-links {
     display: flex;
