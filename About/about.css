@@ -212,17 +212,25 @@
 
 @media screen and (max-width: 768px) {
   body {
-    zoom: 1;
+    max-width: 768px;
+
   }
-  #hero, .glass, .skills, .dashboard {
+  #hero, .glass, .dashboard {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 125%;
+    min-width: 100vh;
+    min-height: 100vh;
   }
   .circle1, .circle2, .circle3, .circle4 {
     display: none;
+  }
+  .skills {
+    display: none;
+    max-height: 0;
   }
   .card {
     display: none;
