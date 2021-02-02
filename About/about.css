@@ -213,7 +213,6 @@
 @media screen and (max-width: 768px) {
   body {
     max-width: 768px;
-
   }
   #hero, .glass, .dashboard {
     position: relative;
@@ -222,7 +221,7 @@
     justify-content: center;
     align-items: center;
     font-size: 125%;
-    min-width: 100vh;
+    min-width: 100%;
     min-height: 100vh;
   }
   .circle1, .circle2, .circle3, .circle4 {
