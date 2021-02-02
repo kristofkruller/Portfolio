@@ -17,6 +17,12 @@ skills.addEventListener('mousemove', (e) => {
     card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
   });
 });
+// this is an option but if you try it, the movement will be very intermittent
+// cards.forEach(card => card.addEventListener('mousemove', (e) => {
+//   let xAxis = (window.innerWidth / 2 - e.pageX) /100;
+//   let yAxis = (window.innerHeight / 2 - e.pageY) /100;
+//   e.target.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+// }));
 
 //animate pop back / transition
 skills.addEventListener('mouseleave', (e) => {
@@ -35,7 +41,7 @@ skills.addEventListener('mouseenter', (e) => {
 
 //CARD ITSELF END
 //ELEMENTS OF CARDS
-const cardIcons = document.querySelectorAll('.content img');
+const cardIcons = document.querySelectorAll('.imgmove');
 const cardH = document.querySelectorAll('.content h3');
 const cardP = document.querySelectorAll('.content p');
 
