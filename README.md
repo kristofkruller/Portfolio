@@ -1,6 +1,6 @@
 #vanillaScratchPortfolio
 
-This porfolio repository gives an noverview about me, all made from total scratch and contains HTML CSS and vanilla JavaScript solutions.
+This porfolio repository gives an overview about me, all made from total scratch and contains HTML CSS and vanilla JavaScript solutions.
 
 My first project was I started to build this up with only HTML and a very little CSS hobby-knowledge, so it took a long time to finalize it.
 

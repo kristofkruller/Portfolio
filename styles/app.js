@@ -1,5 +1,5 @@
 //Navbar circle effect
-const hamburger = document.querySelector(".hamburger");
+const hamburger = document.querySelector(".icon-burger");
 const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".nav-links li");
 

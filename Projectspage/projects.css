@@ -56,8 +56,6 @@
     background-color: rgb(54, 184, 204);
     background-image: linear-gradient(to right, #b9efff 0%, #6f7281 100%);
     background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
     margin-bottom: 5rem;
