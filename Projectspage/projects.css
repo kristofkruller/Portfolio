@@ -37,7 +37,7 @@
   .nav-links li:hover {
     transform: scale(1.2);
     font-weight: 450;
-    transition: .1s;
+    transition: .4s;
   }
 
 /*Projects*/
@@ -142,7 +142,7 @@
   .projects__card:hover {
     transform: scale(1.075);
     transition: 0.3s ease-in;
-    cursor: pointer;
+ 
   }
   
   @media screen and (max-width: 1300px) {
@@ -167,16 +167,7 @@
     justify-content: center;
     align-items: center;
   }
-  
-  #footer__logo {
-    color: #fff;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
-  }
-  
+
   .footer__links {
     width: 100%;
     max-width: 1000px;
@@ -203,16 +194,45 @@
     color: #fff;
   }
   
-  .footer__link--items a {
+  .footer__link--items a, .footer__link--items i, .footer__last {
     color: #fff;
     text-decoration: none;
     margin-bottom: 0.5rem;
     transition: 0.3 ease-out;
+    cursor: pointer;
   }
   
   .footer__link--items a:hover {
-    color: #e9e9e9;
-    transition: 0.3 ease-out;
+    color: #14d9e7;
+    font-size: 21px;
+    font-weight: 700;
+    transition: 0.8s;
+  }
+  .footer__link--items i:hover {
+    color: #14d9e7;
+    font-size: 21px;
+    transition: 0.8s;
+  }
+  .footer__link--items h2:hover {
+    color: #14d9e7;
+    font-size: 23px;
+    transition: 0.8s;
+  }
+  #socmed:hover {
+    color: #fff;
+    font-size: 16px;
+    cursor: unset;
+  }  
+  #socmed h2:hover {
+    color: #fff;
+    font-size: 24px;
+    cursor: unset;
+  }
+  .footer__last:hover {
+    color: #14d9e7;
+    font-size: 22px;
+    transition: 0.8s;
+    cursor: pointer;
   }
   
   .social__icon--link {
@@ -220,12 +240,12 @@
     font-size: 24px;
   }
   
-  .social__media {
+  .home__cr {
     max-width: 1000px;
     width: 100%;
   }
   
-  .social__media--wrap {
+  .home__cr--wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -233,14 +253,7 @@
     max-width: 1000px;
     margin: 40px auto 0 auto;
   }
-  
-  .social__icons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 240px;
-  }
-  
+
   .website__rights {
     color: #fff;
   }
@@ -250,7 +263,7 @@
       padding-top: 2rem;
     }
   
-    #footer__logo {
+    #footer__last {
       margin-bottom: 2rem;
     }
   
@@ -262,7 +275,7 @@
       flex-direction: column;
     }
   
-    .social__media--wrap {
+    .home__cr--wrap {
       flex-direction: column;
     }
   }

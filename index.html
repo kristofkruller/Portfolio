@@ -23,7 +23,7 @@
         <ul class="nav-links">
           <li><a href="./About/about.html">About</a></li>
           <li><a href="#contact-section">Contact</a></li>
-          <li><a href="#">Projects</a></li>
+          <li><a href="./Projectspage/projects.html">Projects</a></li>
         </ul>
       </nav>
     </header>
@@ -50,7 +50,7 @@
             <input type="submit" name="submit" id="email-button" value="Send"> 
           </form>
       </div>
-      <div class="pagetop"><a href="#header"><i class="fas fa-fast-forward"></i></a></div>
+      <div class="pagetop"><a href="#header"><i class="fab fa-fort-awesome-alt"></i></a></div>
     </section>
 <!--Contact section END-->
 <!--Javascript START-->
@@ -58,26 +58,32 @@
     <script src="./styles/app.js"></script>
 <!--Javascript END-->
 <!--Footer START-->
-    <footer>
-      <span>
-        Thank you for visiting my page
-      </span>
-      <div class="footer-links">
-        <ul>
-          <li><a href="#header">Home</a></li>
-          <li><a href="./About/about.html">About</a></li>
-          <li><a href="#contact-section">Contact</a></li>
-          <li><a href="#">Projects</a></li>
-        </ul>
+<div class="footer__container">
+  <div class="footer__links">
+    <div class="footer__link--wrapper">
+      <div class="footer__link--items">
+        <a href="../About/about.html"><i class="far fa-address-card"><h2>About</h2></i></a>
       </div>
-      <div class="footer-social">
-        <ul>
-          <li><a href="https://github.com/kristofkruller" target="_blank"><i class="fab fa-github-square">Github</i></a></li>
-          <li><a href="https://www.linkedin.com/in/kristof-kruller" target="_blank"><i class="fab fa-linkedin">LinkedIn</i></a></li>
-          <li><p>Copiright &copy;<script>document.write(new Date().getFullYear());</script>//KristofKruller</p></li>
-        </ul>
+      <div class="footer__link--items">
+        <a href="../index.html#contact-section"><i class="fas fa-file-signature"><h2>Contact</h2></i></a> 
       </div>
-    </footer>
+      <div class="footer__link--items">
+        <i class="fas fa-share-alt" id='socmed'><h2>Social Media</h2></i>
+        <a href="https://github.com/kristofkruller" target="_blank"><i class="fab fa-github">Github</i></a> 
+        <a href="https://www.linkedin.com/in/kristof-kruller" target="_blank"><i class="fab fa-linkedin">LinkedIn</i></a>
+      </div>
+    </div>
+    <div class="footer__link--wrapper"></div>
+  </div>
+  <section class="home__cr">
+    <div class="home__cr--wrap">
+      <div class="footer__last">
+        <a href="#header"><i class="fab fa-fort-awesome-alt"><h2>To the top</h2></i></a>
+      </div>
+      <p class="website__rights">Copyright &copy;<script>document.write(new Date().getFullYear());</script>//KristofKruller</p>
+    </div>
+  </section>
+</div>
     <!--Footer END-->
   </body>
 </html>

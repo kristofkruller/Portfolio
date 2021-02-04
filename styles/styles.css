@@ -287,17 +287,15 @@
   transition: 0.5s;
 }
 .pagetop i {
-  position: absolute;
-  left: 5%;
-  bottom: -97%;
-  right: 92%;
+  position: relative;
   font-size: 40px;
   cursor: pointer;
+  margin: 2rem;
   color: whitesmoke;
   background: rgba(0, 0, 0, 0);
 }
 .pagetop i:hover {
-  transform: scale(1.5) rotate(180deg);
+  transform: scale(1.5) rotate(360deg);
   transition: .3s;
   color: red;
 }
@@ -315,6 +313,12 @@
     margin: 10px;
     padding-left: 30px;
   }
+
+  }
+  #email-button {
+    font-size: 16px;
+  }
+  
   .email-box h2 {
     margin-left: 40px;
   }
@@ -339,70 +343,139 @@
 /* Contact form END*/
 /*Footer START*/
 
-footer {
-  max-height: 60vh;
-  background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/footer1.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  align-content: center;
-  height: 100%; 
-  width: 100%;
+
+.footer__container {
+  background: linear-gradient(to top, rgba(54, 184, 207, 0.83), rgb(0, 0, 0));
+  padding: 5rem 0;
   display: flex;
-  flex-direction: row;
-  margin-top: 7px;
-  margin-bottom: 7px;
-  padding-left: 15%;
-  padding-right: 15%;
-  padding-bottom: 3%;
-  padding-top: 3%;
-}
-footer span {
-  max-width: 33%;
-  align-self: center;
-}
-.footer-links {
-  width: 100%;
-  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
 }
-.footer-links li, .footer-social li {
-  list-style: none;
-  padding-left: 10%;
-  max-width: 33%;
+
+.footer__links {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
 }
-.footer-social li {
-  line-height: 15px;
+
+.footer__link--wrapper {
+  display: flex;
 }
-.footer-links li {
-  line-height: 25px;
+
+.footer__link--items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 16px;
+  text-align: left;
+  width: 160px;
+  box-sizing: border-box;
 }
-.footer-links ul li a, .footer-social ul li a, footer span {
-  font-size: 18px;
+
+.footer__link--items h2 {
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.footer__link--items a, .footer__link--items i {
+  color: #fff;
   text-decoration: none;
-  color: whitesmoke;
+  margin-bottom: 0.5rem;
+  transition: 0.3 ease-out;
+  cursor: pointer;
 }
-.footer-social {
-width: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
+.footer__last i {
+  color: black;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  transition: 0.3 ease-out;
+  cursor: pointer;
 }
-.footer-links, .footer-social, footer span {
-  flex: 1;
+
+.footer__link--items a:hover {
+  color: #14d9e7;
+  font-size: 21px;
+  font-weight: 700;
+  transition: 0.8s;
 }
-.footer-social li p {
-  font-size: 12px;
-  color: whitesmoke;
-  text-transform: uppercase;
+.footer__link--items i:hover {
+  color: #14d9e7;
+  font-size: 21px;
+  transition: 0.8s;
 }
-.footer-social li a:hover {
-  color: cadetblue;
-  transition: .4s ease;
+.footer__link--items h2:hover {
+  color: #14d9e7;
+  font-size: 23px;
+  transition: 0.8s;
 }
-.footer-links li a:hover {
-  color: cadetblue;
-  transition: .4s ease;
+#socmed:hover {
+  color: #fff;
+  font-size: 16px;
+  cursor: unset;
+}  
+#socmed h2:hover {
+  color: #fff;
+  font-size: 24px;
+  cursor: unset;
+}
+.footer__last i:hover {
+  color: #14d9e7;
+  font-size: 22px;
+  transition: 0.8s;
+  cursor: pointer;
+}
+
+.social__icon--link {
+  color: #fff;
+  font-size: 24px;
+}
+
+.home__cr {
+  max-width: 1000px;
+  width: 100%;
+}
+
+.home__cr--wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto 0 auto;
+}
+
+.website__rights {
+  color: black;
+}
+
+@media screen and (max-width: 820px) {
+  .footer__links {
+    padding-top: 2rem;
+  }
+
+  #footer__last {
+    margin-bottom: 2rem;
+  }
+
+  .website__rights {
+    margin-bottom: 2rem;
+  }
+
+  .footer__link--wrapper {
+    flex-direction: column;
+  }
+
+  .home__cr--wrap {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer__link--items {
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+  }
 }
