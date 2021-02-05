@@ -1,4 +1,45 @@
-//Navbar circle effect
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBjfjet0MK_3-huTobCTiirDyiWBW8dX2Y",
+    authDomain: "portfoliofromscratch-d9f36.firebaseapp.com",
+    projectId: "portfoliofromscratch-d9f36",
+    storageBucket: "portfoliofromscratch-d9f36.appspot.com",
+    messagingSenderId: "735990285162",
+    appId: "1:735990285162:web:2603ac17ce93d919535b13"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  // Ref contactinfo collections
+  let contactInfo = firebase.database().ref("infos");
+  
+//EMAIL FUNCTIONALITY FIREBASE
+const emailBox = document.querySelector('.email-contact')
+
+emailBox.addEventListener('submit', submitForm);
+const emailNode = emailBox.childNodes;
+
+function submitForm(e) {
+  e.preventDefault();
+
+saveContactInfo(emailNode[1],emailNode[3],emailNode[5]);
+emailBox.reset();
+}
+
+//Infosave for FireBase
+function saveContactInfo(emailNode) {
+  let newContactInfo = contactInfo.push();
+
+  newContactInfo.set({
+    name: emailNode[1],
+    email: emailNode[3],
+    message: emailNode[5],
+  });
+};
+
+
+
+//NAVBAR CIRCLE EFFECT
 const hamburger = document.querySelector(".icon-burger");
 const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".nav-links li");
@@ -11,35 +52,3 @@ hamburger.addEventListener("click", () => {
 });
 //Navbar circle effect END
 
-/*Email function
-document.querySelector("textarea").addEventListener("submit".submitForm);
-
-function sendEmail(name, email, message) {
-  Email.send({
-    Host: "smtp.gmail.com",
-    Username: "design.kruller@gmail.com",
-    Password: "pqekqcthxbckwwsa",
-    To: "design.kruller@gmail.com",
-    From: "design.kruller@gmail.com",
-    Subject: `${name} sent you a review`,
-    Body: `Name: ${name} <br/> Email: ${email} <br/> Message: ${message}`,
-  }).then(function (message) { alert("Mail sent successfully") 
-});
-}
-*/
-/*version2
-function sendEmail() { 
-  Email.send({ 
-    Host: "smtp.gmail.com", 
-    Username: "design.kruller@gmail.com",
-    Password: "pqekqcthxbckwwsa",
-    To: "design.kruller@gmail.com",
-    From: "design.kruller@gmail.com",
-    Subject: "Recived a review",
-    Body: `Email: ${email} <br/> Message: ${message}`,
-  }) 
-    .then(function (message) { 
-      alert("mail sent successfully") 
-    }); 
-} 
-*/
