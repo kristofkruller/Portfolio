@@ -4,11 +4,17 @@
     box-sizing: border-box;
     font-family:'Barlow Condensed', sans-serif;
     text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
   }
+
   :root {
     --main-font-color : whitesmoke;
     --main-background-color : black;
+    --secondary-background-color: rgba(79, 112, 202, 0.7);
+    --main-hover-color : rgba(80, 90, 225, 0.65);
+    --light-hover-color : rgba(119, 125, 212, 0.767);
   }
+  
 
   body {
     font-family:'Barlow Condensed', sans-serif;
@@ -144,7 +150,7 @@
 /*Projects*/
     
 .projects {
-    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(54, 184, 204));
+    background: url('../images/background3.jpg'), cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -307,6 +313,7 @@
   margin-bottom: 0.5rem;
   transition: 0.3 ease-out;
   cursor: pointer;
+  font-size: 26px;
 }
 
 .footer__link--items a:hover {
@@ -339,6 +346,8 @@
   font-size: 22px;
   transition: 0.8s;
   cursor: pointer;
+  color: var(--main-font-color);
+  font-size: 28px;
 }
 
 .social__icon--link {
