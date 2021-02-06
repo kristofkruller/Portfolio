@@ -17,23 +17,26 @@
 const emailBox = document.querySelector('.email-contact')
 
 emailBox.addEventListener('submit', submitForm);
-const emailNode = emailBox.childNodes;
+let name = document.querySelector('#name-area');
+let email = document.querySelector('#email-area');
+let message = document.querySelector('#text-area');
+console.log(name, email, message);
 
 function submitForm(e) {
   e.preventDefault();
 
-saveContactInfo(emailNode[1],emailNode[3],emailNode[5]);
+saveContactInfo(name, email, message);
 emailBox.reset();
 }
 
 //Infosave for FireBase
-function saveContactInfo(emailNode) {
+function saveContactInfo(name, email, message) {
   let newContactInfo = contactInfo.push();
 
   newContactInfo.set({
-    name: emailNode[1],
-    email: emailNode[3],
-    message: emailNode[5],
+    name: name,
+    email: email,
+    message: message
   });
 };
 
