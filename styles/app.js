@@ -20,7 +20,6 @@ emailBox.addEventListener('submit', submitForm);
 let name = document.querySelector('#name-area');
 let email = document.querySelector('#email-area');
 let message = document.querySelector('#text-area');
-console.log(name, email, message);
 
 function submitForm(e) {
   e.preventDefault();
@@ -36,7 +35,7 @@ function saveContactInfo(name, email, message) {
   newContactInfo.set({
     name: name,
     email: email,
-    message: message
+    message: message,
   });
 };
 
