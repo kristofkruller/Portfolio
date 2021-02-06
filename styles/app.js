@@ -14,18 +14,17 @@
   let contactInfo = firebase.database().ref("infos");
   
 //EMAIL FUNCTIONALITY FIREBASE
-const emailBox = document.querySelector('.email-contact')
-
-emailBox.addEventListener('submit', submitForm);
-let name = document.querySelector('#name-area');
-let email = document.querySelector('#email-area');
-let message = document.querySelector('#text-area');
+document.querySelector('.email-contact').addEventListener('submit', submitForm);
 
 function submitForm(e) {
   e.preventDefault();
 
+let name = document.querySelector('#name-area');
+let email = document.querySelector('#email-area');
+let message = document.querySelector('#text-area');
+
 saveContactInfo(name, email, message);
-emailBox.reset();
+document.querySelector('.email-contact').reset();
 }
 
 //Infosave for FireBase
