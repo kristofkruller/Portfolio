@@ -52,7 +52,7 @@
     top: 0;
     padding: 0 5%;
     height: 8vh;
-    background-color: var(--main-background-color);
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3));
   }
   .nav-links {
     float: right;
@@ -60,6 +60,7 @@
     margin: 0;
     width: 60%;
     height: 100%;
+    font-weight: 900;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -70,9 +71,9 @@
   .nav-links a {
     display: block;
     padding: 1em;
-    font-size: 18px;
+    font-size: 21px;
     letter-spacing: 3px;
-    color: var(--main-font-color);
+    color: var(--main-background-color);
     text-decoration: none;
   }
   #nav-toggle {
@@ -98,12 +99,13 @@
 
   .nav-links li:hover {
     transform: scale(1.2);
-    font-weight: 450;
+    font-weight: 1000;
     transition: .4s;
   }
 
   @media screen and (max-width: 768px) {
     nav {
+      background: var(--main-background-color);
       position: relative;
       max-width: 100%;
       max-height: 10vh;
@@ -140,6 +142,7 @@
       letter-spacing: 5px;
       font-size: 20px;
       font-weight: 300;
+      color: var(--main-font-color);
     }
     .nav-links.open {
       clip-path: circle(700px at 90% -10%);

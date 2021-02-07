@@ -20,7 +20,12 @@
     font-family:'Barlow Condensed', sans-serif;
     text-rendering: optimizeLegibility;
     min-height: 100vh;
+      background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../images/abouthero.jpg);
+      background-size: cover;
+      background-position:center;
+      max-width: 100%;
   }
+
  
   nav {
     position: fixed;
@@ -30,7 +35,7 @@
     top: 0;
     padding: 0 5%;
     height: 8vh;
-    background-color: var(--main-background-color);
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3));
   }
   .nav-links {
     float: right;
@@ -48,9 +53,10 @@
   .nav-links a {
     display: block;
     padding: 1em;
-    font-size: 18px;
+    font-size: 21px;
     letter-spacing: 3px;
-    color: var(--main-font-color);
+    font-weight: 900;
+    color: var(--main-background-color);
     text-decoration: none;
   }
   #nav-toggle {
@@ -76,12 +82,13 @@
 
   .nav-links li:hover {
     transform: scale(1.2);
-    font-weight: 450;
+    font-weight: 1000;
     transition: .4s;
   }
 
   @media screen and (max-width: 768px) {
     nav {
+      background: var(--main-background-color);
       position: relative;
       max-width: 100%;
       max-height: 10vh;
@@ -118,6 +125,7 @@
       letter-spacing: 5px;
       font-size: 20px;
       font-weight: 300;
+      color: var(--main-font-color);
     }
     .nav-links.open {
       clip-path: circle(700px at 90% -10%);
@@ -150,7 +158,6 @@
 /*Projects*/
     
 .projects {
-    background: url('../images/background3.jpg'), cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -158,17 +165,12 @@
     height: 100%;
     padding: 10rem 0;
   }
-  
   .projects h1 {
-    background-color: rgb(54, 184, 204);
-    background-image: linear-gradient(to right, #b9efff 0%, #6f7281 100%);
+    color: var(--main-font-color);
     background-size: 100%;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
     margin-bottom: 5rem;
     font-size: 2.5rem;
   }
-  
   .projects__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -183,53 +185,47 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #fff;
-    background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
     transition: 0.3s ease-in;
   }
-  
-  .projects__card:nth-child(2) {
-    background: #1fa2ff; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #a6ffcb,
-      #12d8fa,
-      #1fa2ff
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #a6ffcb,
-      #12d8fa,
-      #1fa2ff
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  }
-  
-  .projects__card:nth-child(3) {
-    background-image: linear-gradient(
-      -225deg,
-      #231557 0%,
-      #44107a 29%,
-      #ff1361 67%,
-      #fff800 100%
-    );
-  }
-  
+
   .projects__card h2 {
     text-align: center;
+    padding-top: 40px;
   }
-  
+  #overlay {
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.7s;
+  }
+  #overlay:hover {
+    opacity: 1;
+  }
+  .projects__card i {
+    color: var(--main-font-color);
+    font-size: 180px;
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    transition: 0.7s;
+
+  }
+  .projects__card i:hover {
+    opacity: 0;
+  }
+
   .projects__card p {
     text-align: center;
     margin-top: 24px;
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: 600;
   }
-  
   .projects__btn {
     display: flex;
     justify-content: center;
     margin-top: 16px;
   }
-  
   .projects__card button {
     color: #fff;
     padding: 14px 24px;
@@ -243,11 +239,10 @@
   .projects__card button:hover {
     cursor: pointer;
   }
-  
   .projects__card:hover {
     transform: scale(1.075);
     transition: 0.3s ease-in;
- 
+    opacity: 1;
   }
   
   @media screen and (max-width: 1300px) {
@@ -266,7 +261,7 @@
 
 
 .footer__container {
-  background: linear-gradient(to top, rgb(96, 127, 211), rgb(0, 0, 0));
+  background: linear-gradient(to top, rgb(128, 192, 171), rgb(0, 0, 0));
   padding: 5rem 0;
   display: flex;
   flex-direction: column;
