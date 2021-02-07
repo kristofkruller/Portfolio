@@ -1,3 +1,4 @@
+// SCRIPT COPY FOR SETTING FIRE
   // Your web app's Firebase configuration
   var firebaseConfig = {
     apiKey: "AIzaSyBjfjet0MK_3-huTobCTiirDyiWBW8dX2Y",
@@ -10,24 +11,26 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
-  // Ref contactinfo collections
+// REF CONTACTINFO FOR COLLECT DATA
   let contactInfo = firebase.database().ref("infos");
   
-//EMAIL FUNCTIONALITY FIREBASE
+// EMAIL FUNCTIONALITY FIREBASE
 document.querySelector('.email-contact').addEventListener('submit', submitForm);
 
 function submitForm(e) {
+  // Block submit for page
   e.preventDefault();
 
-let name = document.querySelector('#name-area');
-let email = document.querySelector('#email-area');
-let message = document.querySelector('#text-area');
+let name = document.querySelector('#name-area').value;
+let email = document.querySelector('#email-area').value;
+let message = document.querySelector('#text-area').value;
 
 saveContactInfo(name, email, message);
+// MAKE THE CONTENT RESET AFTER CLICK
 document.querySelector('.email-contact').reset();
 }
 
-//Infosave for FireBase
+// INFOSAVE-PUSH FOR THE STORE 
 function saveContactInfo(name, email, message) {
   let newContactInfo = contactInfo.push();
 
@@ -37,10 +40,9 @@ function saveContactInfo(name, email, message) {
     message: message,
   });
 };
+// FIREBASE END
 
-
-
-//NAVBAR CIRCLE EFFECT
+// NAVBAR CIRCLE EFFECT
 const hamburger = document.querySelector(".icon-burger");
 const navLinks = document.querySelector(".nav-links");
 const links = document.querySelectorAll(".nav-links li");
@@ -51,5 +53,5 @@ hamburger.addEventListener("click", () => {
     link.classList.toggle("fade");
   });
 });
-//Navbar circle effect END
+// NAVBAR CIRCLE EFFECT END
 
