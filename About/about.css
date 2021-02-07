@@ -107,17 +107,17 @@
 }
 
 .home-button {
-  top: 3rem;
   left: 0.5rem;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
   font-size: 1.4rem;
   display: flex;
   align-items: flex-start;
-  padding: 3rem;
+  padding: 1.5rem;
 }
 .home-button a {
   text-decoration: none;
   color: black;
+  font-weight: 400;
 }
 .home-button a:hover {
   color: rgb(46, 42, 102);
@@ -149,6 +149,7 @@
   max-width: 90%;
   clip-path: circle();
 }
+
 .link {
   display: flex;
   margin: 2rem 0rem;

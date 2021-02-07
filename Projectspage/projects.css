@@ -171,6 +171,11 @@
     margin-bottom: 5rem;
     font-size: 2.5rem;
   }
+  .projects h5 {
+    color: var(--main-font-color);
+    background-size: 100%;
+    margin-bottom: 5rem;
+  }
   .projects__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -196,6 +201,7 @@
     text-align: center;
     padding-top: 40px;
   }
+
   #overlay {
     height: 100%;
     width: 100%;
@@ -324,18 +330,18 @@
 }
 
 .footer__link--items a:hover {
-  color: var(--light-hover-color);
+  color: rgba(128, 192, 171, .9);
   font-size: 21px;
   font-weight: 700;
   transition: 0.8s;
 }
 .footer__link--items i:hover {
-  color: var(--light-hover-color);
+  color: rgba(128, 192, 171, .9);
   font-size: 21px;
   transition: 0.8s;
 }
 .footer__link--items h2:hover {
-  color: var(--light-hover-color);
+  color: rgba(128, 192, 171, .9);
   font-size: 23px;
   transition: 0.8s;
 }
