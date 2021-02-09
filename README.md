@@ -1,7 +1,10 @@
-#vanillaScratchPortfolio
+*vanillaScratchPortfolio
 
-This porfolio repository gives an overview about me, all made from total scratch and contains HTML CSS and vanilla JavaScript solutions.
+This porfolio repository gives an overview about me, my first project - all made from total scratch and contains HTML CSS and vanilla JavaScript solutions.
 
-My first project was I started to build this up with only HTML and a very little CSS hobby-knowledge, so it took a long time to finalize it.
+I will update this continuosly as optimalization, but besides I will try to keep its original structure, to give a picture about where I started.
 
-I will update this continuosly as optimalization, but besides I will try to keep its original structure, to give a picture about how I started. :)
+Landing page is mainly HTML and CSS I only used JS to make the navbar circle effect smoother, and of course for the contact box to link it with Firebase Realtime Database so I get - if someone use it - all the data there directly.
+About page contains more JS because of designing. A mousemove command let the tracking go on, and then I tried to make a little bit of 3D effect with the use of axis Z. 
+The project page has a glass design and redirects the user here to Github if someone intrested about the code.
+Furthermore my point was to let the users have a nice feeling when navigatin through the pages so I put as many links, buttons everywhere as I could. 
