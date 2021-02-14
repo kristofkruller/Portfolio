@@ -209,9 +209,9 @@
     body {
       max-width: 768px;
     }
-    .myname {
-      margin-left: 0rem;
-      padding: 11rem 2rem 0rem 0rem;
+    .myname { 
+      margin-left: 5rem;
+      margin-top: 13rem;
       opacity: 0.47;
       display: flex;
       flex-direction: column;
