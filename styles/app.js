@@ -55,3 +55,20 @@ hamburger.addEventListener("click", () => {
 });
 // NAVBAR CIRCLE EFFECT END
 
+// landing anim 
+const animPointsY = document.querySelectorAll('.animy');
+
+observer = new IntersectionObserver((entries) => {
+
+  entries.forEach(entry => {
+      if(entry.intersectionRatio > 0) {
+          entry.target.style.animation = `anim1 1s ${entry.target.dataset.delay} forwards ease-out`;
+      }
+      else {
+          entry.target.style.animation = 'none';
+      }
+  })
+})
+animPointsY.forEach(ypoint => {
+  observer.observe(ypoint)
+})

@@ -19,6 +19,17 @@
   --main-hover-color : rgba(80, 90, 225, 0.65);
   --light-hover-color : rgba(119, 125, 212, 0.767);
 }
+/*anim text landing*/
+@keyframes anim1 {
+  from {
+      transform: translateY(-70px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
 
 /* Scroll bar START*/
 
