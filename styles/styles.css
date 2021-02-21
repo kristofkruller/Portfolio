@@ -209,6 +209,7 @@
     left: 10%;
     top: 28%;
     transform: translate(-20%, -70%);
+    opacity: 0;
   }
   h1 span {
     text-transform: uppercase;
@@ -266,6 +267,7 @@
   font-size: 35px;
   letter-spacing: 5px;
   margin-bottom: 10%;
+  opacity: 0;
 }
 .contact-links i {
   background: black;
@@ -291,7 +293,7 @@
   text-transform: uppercase;
   margin-bottom: 30px;
   color: var(--light-hover-color);
-  ;
+  opacity: 0;
 }
 .text-box {
   background: var(--secondary-background-color);
