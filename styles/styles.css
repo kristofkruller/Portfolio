@@ -38,7 +38,8 @@
   background: black;
 }
 ::-webkit-scrollbar-track {
-  border: none;9/+}
+  border: none;
+}
 ::-webkit-scrollbar-thumb {
   background: radial-gradient(rgba(105, 96, 238, 0.35), black);
 }
