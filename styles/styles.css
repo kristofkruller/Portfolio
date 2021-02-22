@@ -38,8 +38,7 @@
   background: black;
 }
 ::-webkit-scrollbar-track {
-  border: none;
-}
+  border: none;9/+}
 ::-webkit-scrollbar-thumb {
   background: radial-gradient(rgba(105, 96, 238, 0.35), black);
 }
@@ -216,7 +215,9 @@
   }
   
   @media screen and (max-width: 768px) {
-  
+    html,body{
+      overflow-x: hidden;
+    }
     .myname { 
       display: flex;
       justify-content: space-between;
