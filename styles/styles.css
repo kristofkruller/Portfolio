@@ -456,7 +456,7 @@
   padding-left: 5rem;
   transition: 0.3 ease-out;
   cursor: pointer;
-  font-size: 26px;
+  font-size: 23px;
 }
 
 .footer__link--items a:hover {
@@ -486,7 +486,7 @@
   cursor: unset;
 }
 .footer__last i:hover {
-  font-size: 28px;
+  font-size: 25px;
   transition: 0.8s;
   cursor: pointer;
   color: var(--main-font-color);

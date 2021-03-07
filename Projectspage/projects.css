@@ -20,10 +20,11 @@
     font-family:'Barlow Condensed', sans-serif;
     text-rendering: optimizeLegibility;
     min-height: 100vh;
-      background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../images/abouthero.jpg);
+    min-width: 100vw;
+      background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../images/projectsbg.jpg);
       background-size: cover;
-      background-position:center;
-      max-width: 100%;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
   }
 
  
@@ -156,6 +157,51 @@
   }
 
 /*Projects*/
+@media screen and (max-width: 768px) {
+  html,body{
+    overflow-x: hidden;
+  }
+}
+/*For All*/
+
+.smallNav {
+  position: fixed;
+  top: 15%;
+  right: 10%;
+  width: 10vw;
+}
+
+.desNav, .froNav {
+  border-radius: 10px;
+  padding: 0.3rem;
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+}
+.desNav:hover, .froNav:hover {
+  transition: 0.3s ease-in-out;
+  background: rgba(241, 152, 51, 0.9);
+  box-shadow: 1px 1px #131313;
+}
+
+.smallNav a {
+  text-decoration: none;
+  color: #131313;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  .smallNav {
+    position: absolute;
+    margin: 2rem;
+  }
+}
+
+
+.projects h5 {
+  color: var(--main-font-color);
+  background-size: 100%;
+  margin-bottom: 5rem;
+}
     
 .projects {
     display: flex;
@@ -163,19 +209,9 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    padding: 10rem 0;
+    padding: 3rem 0;
   }
-  .projects h1 {
-    color: var(--main-font-color);
-    background-size: 100%;
-    margin-bottom: 5rem;
-    font-size: 2.5rem;
-  }
-  .projects h5 {
-    color: var(--main-font-color);
-    background-size: 100%;
-    margin-bottom: 5rem;
-  }
+
   .projects__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -264,7 +300,7 @@
     transform: scale(1.075);
     transition: 0.4s ease-in-out;
     padding-top: 0;
-    background: linear-gradient(to right bottom, rgba(128, 192, 171, .9), rgba(255, 255, 255, .7));
+    background: linear-gradient(to right bottom, rgba(241, 152, 51, 0.9), rgba(255, 255, 255, .7));
   }
   
   @media screen and (max-width: 1300px) {
@@ -279,11 +315,86 @@
     }
   }
 
+/*For Spec*/
+.projects h1 {
+  color: var(--main-font-color);
+  background-size: 100%;
+  font-size: 2.5rem;
+}
+
+#designH1 {
+  margin: 5rem;
+}
+
+#frontendH1 {
+  margin-bottom: 2rem;
+}
+
+.h1despic {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+.h1despic:first-child {
+  padding-top: 1rem;
+}
+.h1despic img {
+  max-height: 150px;
+  max-width: 150px;
+}
+
+.despic {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 2rem;
+
+}
+.despic img {
+  max-height: 150px;
+  max-width: 150px;
+}
+.despicxd {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 2rem;
+}
+.despicxd img {
+  max-height: 300px;
+  max-width: 300px;
+}
+
+
+.desNav2 {
+opacity: 0;
+margin: 2rem;
+width: 150px;
+background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+border-radius: 6px;
+}
+.desNav2 a {
+  text-decoration: none;
+  color: #131313;
+  font-size: 20px;
+  font-weight: 600;
+}
+.desNav2:hover {
+  transition: 0.3s ease-in-out;
+  background: rgba(241, 152, 51, 0.9);
+  box-shadow: 1px 1px #131313;
+}
+@media screen and (max-width: 768px) {
+  .desNav2 {
+    opacity: 1;
+    position: relative;
+  }
+}
+
+
 /* Footer */
 
 
 .footer__container {
-  background: linear-gradient(to top, rgb(128, 192, 171), rgb(0, 0, 0));
+  background: linear-gradient(to top, rgb(241, 152, 51), rgb(0, 0, 0));
   padding: 5rem 0;
   display: flex;
   flex-direction: column;
@@ -334,18 +445,18 @@
 }
 
 .footer__link--items a:hover {
-  color: rgba(128, 192, 171, .9);
+  color: rgba(241, 152, 51, .9);
   font-size: 21px;
   font-weight: 700;
   transition: 0.8s;
 }
 .footer__link--items i:hover {
-  color: rgba(128, 192, 171, .9);
+  color: rgba(241, 152, 51, .9);
   font-size: 21px;
   transition: 0.8s;
 }
 .footer__link--items h2:hover {
-  color: rgba(128, 192, 171, .9);
+  color: rgba(241, 152, 51, .9);
   font-size: 23px;
   transition: 0.8s;
 }
