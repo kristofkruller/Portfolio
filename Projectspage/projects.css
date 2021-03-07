@@ -211,11 +211,30 @@
     height: 100%;
     padding: 3rem 0;
   }
+  .dprojects h5 {
+    color: var(--main-font-color);
+    background-size: 100%;
+    margin-bottom: 5rem;
+  }
+      
+  .dprojects {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding: 3rem 0;
+    }
 
   .projects__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+  }
+  .dprojects__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
   }
   
   .projects__card {
@@ -231,8 +250,26 @@
     transition: 0.3s ease-in;
     padding-top: 100px;
   }
+  .dprojects__card {
+    position: relative;
+    margin: 10px;
+    height: 700px;
+    width: 400px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    transition: 0.3s ease-in;
+    padding-top: 100px;
+  }
 
   .projects__card h2 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  .dprojects__card h2 {
     position: absolute;
     top: 20px;
     left: 20px;
@@ -263,7 +300,22 @@
     font-size: 19px;
     font-weight: 500;
   }
+  .dprojects__card p {
+    text-align: center;
+    margin-top: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 19px;
+    font-weight: 500;
+  }
   .projects__card p i {
+    color: var(--main-font-color);
+    font-size: 65px;
+    padding: 15px;
+    margin: 0;
+    display: inline-block;
+  }
+  .dprojects__card p i {
     color: var(--main-font-color);
     font-size: 65px;
     padding: 15px;
@@ -292,11 +344,29 @@
     background: #131313;
     font-size: 1rem;
   }
+  .dprojects__card button {
+    color: #fff;
+    padding: 14px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #131313;
+    font-size: 1rem;
+  }
   
   .projects__card button:hover {
     cursor: pointer;
   }
   .projects__card:hover {
+    transform: scale(1.075);
+    transition: 0.4s ease-in-out;
+    padding-top: 0;
+    background: linear-gradient(to right bottom, rgba(241, 152, 51, 0.9), rgba(255, 255, 255, .7));
+  }
+  .dprojects__card button:hover {
+    cursor: pointer;
+  }
+  .dprojects__card:hover {
     transform: scale(1.075);
     transition: 0.4s ease-in-out;
     padding-top: 0;
@@ -317,6 +387,11 @@
 
 /*For Spec*/
 .projects h1 {
+  color: var(--main-font-color);
+  background-size: 100%;
+  font-size: 2.5rem;
+}
+.dprojects h1 {
   color: var(--main-font-color);
   background-size: 100%;
   font-size: 2.5rem;
