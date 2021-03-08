@@ -216,6 +216,11 @@
     background-size: 100%;
     margin-bottom: 5rem;
   }
+  .xdprojects h5 {
+    color: var(--main-font-color);
+    background-size: 100%;
+    margin-bottom: 5rem;
+  }
       
   .dprojects {
       display: flex;
@@ -233,7 +238,8 @@
   }
   .dprojects__wrapper {
     display: grid;
-    grid-template-columns: 1fr;
+    margin: 25px;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
   }
   
@@ -254,7 +260,20 @@
     position: relative;
     margin: 10px;
     height: 700px;
-    width: 400px;
+    width: 360px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    transition: 0.3s ease-in;
+    padding-top: 100px;
+  }
+  .xdprojects__card {
+    position: relative;
+    margin: 5px;
+    height: 750px;
+    width: 1100px;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
@@ -274,11 +293,27 @@
     top: 20px;
     left: 20px;
   }
+  .xdprojects__card h2 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
 
   #overlay {
     height: 100%;
     width: 100%;
     opacity: 0.1;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-bottom: 10rem;
+    transition: 1s ease-in-out;
+
+  }
+  #xdoverlay {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -301,6 +336,14 @@
     font-weight: 500;
   }
   .dprojects__card p {
+    text-align: center;
+    margin-top: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 19px;
+    font-weight: 500;
+  }
+  .xdprojects__card p {
     text-align: center;
     margin-top: 24px;
     padding-left: 20px;
@@ -353,6 +396,15 @@
     background: #131313;
     font-size: 1rem;
   }
+  .xdprojects__card button {
+    color: #fff;
+    padding: 14px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #131313;
+    font-size: 1rem;
+  }
   
   .projects__card button:hover {
     cursor: pointer;
@@ -364,6 +416,9 @@
     background: linear-gradient(to right bottom, rgba(241, 152, 51, 0.9), rgba(255, 255, 255, .7));
   }
   .dprojects__card button:hover {
+    cursor: pointer;
+  }
+  .xdprojects__card button:hover {
     cursor: pointer;
   }
   .dprojects__card:hover {
@@ -383,7 +438,30 @@
     .projects__wrapper {
       grid-template-columns: 1fr;
     }
-  }
+    .dprojects__wrapper {
+      grid-template-columns: 1fr;
+    }
+    .xdprojects__card {
+      position: relative;
+      margin: 5px;
+      height: 750px;
+      width: 360px;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+      transition: 0.3s ease-in;
+      padding-top: 100px;
+    }
+    .xdpic { 
+
+      display: border-box;
+      justify-content: space-around;
+      padding: 1rem 2rem
+    }
+
+    }
 
 /*For Spec*/
 .projects h1 {
@@ -392,6 +470,11 @@
   font-size: 2.5rem;
 }
 .dprojects h1 {
+  color: var(--main-font-color);
+  background-size: 100%;
+  font-size: 2.5rem;
+}
+.xdprojects h1 {
   color: var(--main-font-color);
   background-size: 100%;
   font-size: 2.5rem;
@@ -436,6 +519,16 @@
 .despicxd img {
   max-height: 300px;
   max-width: 300px;
+}
+.xdpic {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 2rem;
+
+}
+.xdpic img {
+  max-height: 600px;
+  max-width: 1000px;
 }
 
 
