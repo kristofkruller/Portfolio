@@ -259,7 +259,7 @@
   .dprojects__card {
     position: relative;
     margin: 10px;
-    height: 700px;
+    height: 720px;
     width: 360px;
     border-radius: 4px;
     display: flex;
@@ -444,7 +444,7 @@
     .xdprojects__card {
       position: relative;
       margin: 5px;
-      height: 750px;
+      height: 400px;
       width: 360px;
       border-radius: 4px;
       display: flex;
@@ -454,10 +454,8 @@
       transition: 0.3s ease-in;
       padding-top: 100px;
     }
-    .xdpic { 
-
-      display: border-box;
-      justify-content: space-around;
+    .xdpic img { 
+      width: 300px;
       padding: 1rem 2rem
     }
 
