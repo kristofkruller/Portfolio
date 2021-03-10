@@ -214,6 +214,9 @@ nav {
 .slide4 {
   background-image: url("../../Design/colorSplashBanner.png");
 }
+.slide5 {
+  background-image: url("../../Design/webBannerPsBrushes.png");
+}
 
 .slide-content {
   display: flex;
