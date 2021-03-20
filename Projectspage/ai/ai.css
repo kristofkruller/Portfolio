@@ -203,7 +203,7 @@ nav {
 }
 
 .slide1 {
-  background-image: url("../../Design/saurBanner-01.png");
+  background-image: url("../../Design/xdexample.png");
 }
 .slide2 {
   background-image: url("../../Design/glassPlanet.png");
@@ -212,13 +212,16 @@ nav {
   background-image: url("../../Design/happyFire.png");
 }
 .slide4 {
-  background-image: url("../../Design/colorSplashBanner.png");
+  background-image: url("../../Design/saurBanner-01.png");
 }
 .slide5 {
   background-image: url("../../Design/webBannerPsBrushes.png");
 }
 .slide6 {
   background-image: url("../../Design/webBannerSales.png");
+}
+.slide6 {
+  background-image: url("../../Design/colorSplashBanner.png");
 }
 
 .slide-content {
