@@ -212,16 +212,22 @@ nav {
   background-image: url("../../Design/happyFire.png");
 }
 .slide4 {
-  background-image: url("../../Design/saurBanner-01.png");
+  background-image: url("../../Design/client-searcher.png");
 }
 .slide5 {
-  background-image: url("../../Design/webBannerPsBrushes.png");
+  background-image: url("../../Design/industrypicker.png");
 }
 .slide6 {
-  background-image: url("../../Design/webBannerSales.png");
+  background-image: url("../../Design/saurBanner-01.png");
 }
 .slide7 {
   background-image: url("../../Design/colorSplashBanner.png");
+}
+.slide8 {
+  background-image: url("../../Design/webBannerSales.png");
+}
+.slide9 {
+  background-image: url("../../Design/webBannerPsBrushes.png");
 }
 
 .slide-content {
