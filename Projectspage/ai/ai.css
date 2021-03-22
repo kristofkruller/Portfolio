@@ -205,8 +205,14 @@ nav {
 .slide1 {
   background-image: url("../../Design/xdexample.png");
 }
+.slide11 {
+  background-image: url("../../Design/xdexample2.png");
+}
 .slide2 {
   background-image: url("../../Design/glassPlanet.png");
+}
+.slide22 {
+  background-image: url("../../Design/glassPlanet_pen.png");
 }
 .slide3 {
   background-image: url("../../Design/happyFire.png");
@@ -219,6 +225,9 @@ nav {
 }
 .slide6 {
   background-image: url("../../Design/saurBanner-01.png");
+}
+.slide66 {
+  background-image: url("../../Design/saurBannerPenVersion.jpg");
 }
 .slide7 {
   background-image: url("../../Design/colorSplashBanner.png");
